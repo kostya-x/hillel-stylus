@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+}
+.header {
+  height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: url(../images/bg_vinyl.png) no-repeat center/cover;
+}
+.header--overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 49, 53, 0.7);
+}
+.logo__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+.logo {
+  padding: 15px 105px;
+  margin: auto;
+  text-transform: uppercase;
+  border: rgba(255, 255, 255, 1) solid 3px;
+}
+.logo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: rgba(255, 255, 255, 1) 1px solid;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+}
+.logo__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -0.48em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  letter-spacing: 0.48em;
+}
+.logo__slogan {
+  width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Georia", serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+.logo + .logo__slogan {
+  margin-top: 30px;
+}
+.scroll-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 60px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+}
+.navigation__logo--link {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+}
+.navigation__burger {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 15px 50px;
+  vertical-align: top;
+}
+.content__left-side {
+  max-width: 300px;
+  padding-top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 27px;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-top: 3px solid rgba(51, 51, 51, 1);
+}
+.content__left-side > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.content__right-side {
+  max-width: 555px;
+  font-family: "Georia", serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+  color: rgba(51, 51, 51, 1);
+}
+.content__right-side :last-child {
+  margin-bottom: 0;
+}
+.content__left-side + .content__right-side {
+  margin-left: 110px;
+}
+.content__right-side :first-child {
+  margin-top: 0;
+}
+.photo {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 70px;
+}
+.photo__img {
+  width: 100%;
+}
+.story {
+  text-align: center;
+}
+.story__wrapper {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 90px;
+  background-color: rgba(31, 49, 53, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.story__wrapper>.story__text:last-of-type {
+  margin-bottom: 0;
+}
+.story__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.story__title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  margin-right: 50px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 1);
+}
+.story__title::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  margin-left: 50px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 1);
+}
+.story__text {
+  max-width: 630px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Georia", serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+.story__avatar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+.story__footer {
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+.story__bockquote-quote {
+  font-family: "Georia", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 26px;
+  color: rgba(51, 51, 51, 1);
+}
+.story__bockquote-author {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(173, 173, 173, 1);
+}
